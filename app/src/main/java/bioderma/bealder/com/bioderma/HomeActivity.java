@@ -1,7 +1,6 @@
 package bioderma.bealder.com.bioderma;
 
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -38,10 +37,10 @@ public class HomeActivity extends Activity {
     }
 
     public void tryOpen(String packageName, String fallbackUrl) {
-        try {
-            Intent launchIntent = getPackageManager().getLaunchIntentForPackage(packageName);
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage(packageName);
+        if (launchIntent != null) {
             startActivity(launchIntent);
-        } catch (ActivityNotFoundException e) {
+        } else {
             Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(fallbackUrl));
             startActivity(myIntent);
         }
