@@ -26,6 +26,13 @@ public class WebActivity extends ActionBarActivity {
         wv.setWebViewClient(new WebViewClient());
         wv.getSettings().setJavaScriptEnabled(true);
         wv.loadUrl(getIntent().getStringExtra("url"));
+
+        if(getIntent().getBooleanExtra("enableZoom", false)) {
+            wv.getSettings().setBuiltInZoomControls(true);
+            wv.getSettings().setSupportZoom(true);
+            wv.getSettings().setLoadWithOverviewMode(true);
+            wv.getSettings().setUseWideViewPort(true);
+        }
     }
 
     @Override

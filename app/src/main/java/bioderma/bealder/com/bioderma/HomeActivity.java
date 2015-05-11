@@ -28,10 +28,11 @@ public class HomeActivity extends Activity {
         setContentView(R.layout.activity_home);
     }
 
-    public void openWebview(String title, String url) {
+    public void openWebview(String title, String url, Boolean enableZoom) {
         Intent intent = new Intent(this, WebActivity.class);
         intent.putExtra("url", url);
         intent.putExtra("title", title);
+        intent.putExtra("enableZoom", enableZoom);
 
         startActivity(intent);
     }
@@ -47,15 +48,15 @@ public class HomeActivity extends Activity {
     }
 
     public void openProgram(View view) {
-        openWebview("Program", "https://google.fr");
+        openWebview("Program", "http://bioderma.yurplan.com/agenda.php", false);
     }
 
     public void openWhosWho(View view) {
-        openWebview("Who's who", "https://google.fr");
+        openWebview("Who's who", "http://bioderma.yurplan.com/atendees.php", false);
     }
 
     public void openWheretogo(View view) {
-        openWebview("Where to go", "https://google.fr");
+        openWebview("Where to go", "https://img.bealder.com/img/313701-plan_hotel.png", true);
     }
 
     public void openTwitter(View view) {
