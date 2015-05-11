@@ -1,7 +1,9 @@
 package bioderma.bealder.com.bioderma;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import bioderma.bealder.com.bioderma.util.SystemUiHider;
 
@@ -23,5 +25,25 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home);
+    }
+
+    public void openWebview(String title, String url) {
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url", url);
+        intent.putExtra("title", title);
+
+        startActivity(intent);
+    }
+
+    public void openProgram(View view) {
+        openWebview("Program", "https://google.fr");
+    }
+
+    public void openWhosWho(View view) {
+        openWebview("Who's who", "https://google.fr");
+    }
+
+    public void openWheretogo(View view) {
+        openWebview("Where to go", "https://google.fr");
     }
 }

@@ -36,6 +36,7 @@
             android:padding="@dimen/button_padding"
             android:text="Program"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="openProgram"
             android:textColor="#000000"/>
 
         <Button
@@ -50,6 +51,7 @@
             android:padding="@dimen/button_padding"
             android:text="Who's who"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="openWhosWho"
             android:textColor="#000000"/>
 
         <Button
@@ -64,6 +66,7 @@
             android:padding="@dimen/button_padding"
             android:text="Where to go"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="openWheretogo"
             android:textColor="#000000"/>
 
         <Button
