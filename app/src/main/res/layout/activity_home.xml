@@ -1,46 +1,99 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="#0099cc"
-             tools:context=".HomeActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f3fafc"
+                tools:context=".HomeActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <TextView android:id="@+id/fullscreen_content"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:keepScreenOn="true"
-              android:textColor="#33b5e5"
-              android:textStyle="bold"
-              android:textSize="50sp"
-              android:gravity="center"
-              android:text="@string/dummy_content"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo"/>
 
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="60dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:orientation="vertical">
 
-        <LinearLayout android:id="@+id/fullscreen_content_controls"
-                      style="?metaButtonBarStyle"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_gravity="bottom|center_horizontal"
-                      android:background="@color/black_overlay"
-                      android:orientation="horizontal"
-                      tools:ignore="UselessParent">
+        <Button
+            android:id="@+id/program"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Program"
+            android:drawableLeft="@drawable/ic_program"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-            <Button android:id="@+id/dummy_button"
-                    style="?metaButtonBarButtonStyle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/dummy_button"/>
+        <Button
+            android:id="@+id/whoswho"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Who's who"
+            android:drawableLeft="@drawable/ic_users"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-        </LinearLayout>
-    </FrameLayout>
+        <Button
+            android:id="@+id/wheretogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Where to go"
+            android:drawableLeft="@drawable/ic_map"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-</FrameLayout>
+        <Button
+            android:id="@+id/twitter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:drawableLeft="@drawable/ic_twitter"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Button
+            android:id="@+id/instagram"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:drawableLeft="@drawable/ic_instagram"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's scan"
+            android:drawableLeft="@drawable/ic_qr"
+            android:background="@drawable/border"
+            android:textColor="#000000"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+</RelativeLayout>
