@@ -19,81 +19,92 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:paddingTop="60dp"
+        android:orientation="vertical"
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
-        android:orientation="vertical">
+        android:paddingTop="60dp">
 
         <Button
             android:id="@+id/program"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Program"
-            android:drawableLeft="@drawable/ic_program"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_program"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Program"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/whoswho"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Who's who"
-            android:drawableLeft="@drawable/ic_users"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_users"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Who's who"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/wheretogo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Where to go"
-            android:drawableLeft="@drawable/ic_map"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_map"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Where to go"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/twitter"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Twitter"
-            android:drawableLeft="@drawable/ic_twitter"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_twitter"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Twitter"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/instagram"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Instagram"
-            android:drawableLeft="@drawable/ic_instagram"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_instagram"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Instagram"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/scan"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Let's scan"
-            android:drawableLeft="@drawable/ic_qr"
-            android:background="@drawable/border"
-            android:textColor="#000000"
-            android:padding="@dimen/button_padding"
             android:layout_margin="@dimen/button_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_qr"
+            android:gravity="left|center"
+            android:padding="@dimen/button_padding"
+            android:text="Let's scan"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"/>
     </LinearLayout>
 </RelativeLayout>
