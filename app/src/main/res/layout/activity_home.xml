@@ -81,6 +81,7 @@
             android:padding="@dimen/button_padding"
             android:text="Twitter"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="openTwitter"
             android:textColor="#000000"/>
 
         <Button
@@ -94,6 +95,7 @@
             android:gravity="left|center"
             android:padding="@dimen/button_padding"
             android:text="Instagram"
+            android:onClick="openInstagram"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#000000"/>
 
@@ -107,6 +109,7 @@
             android:gravity="left|center"
             android:padding="@dimen/button_padding"
             android:text="Let's scan"
+            android:onClick="openQrCode"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#000000"/>
     </LinearLayout>
