@@ -3,8 +3,9 @@ package bioderma.bealder.com.bioderma;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 public class WebActivity extends ActionBarActivity {
@@ -16,15 +17,15 @@ public class WebActivity extends ActionBarActivity {
 
         android.support.v7.app.ActionBar ab = getSupportActionBar();
 
+        // Display left caret and title
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setTitle(getIntent().getStringExtra("title"));
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_web, menu);
-        return true;
+        // Navigate to specified URL
+        WebView wv = (WebView) findViewById(R.id.webView);
+        wv.setWebViewClient(new WebViewClient());
+        wv.getSettings().setJavaScriptEnabled(true);
+        wv.loadUrl(getIntent().getStringExtra("url"));
     }
 
     @Override
