@@ -60,8 +60,9 @@ public class HomeActivity extends Activity {
     }
 
     public void openInstagram(View view) {
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/explore/tags/IAMAJACCIO2015/"));
-        startActivity(myIntent);
+        openWebview("#IAMAJACCIO2015", "https://fly.bealder.com/bioderma-3el8a.api", false);
+        // Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/explore/tags/IAMAJACCIO2015/"));
+        // startActivity(myIntent);
     }
 
     public void openQrCode(View view) {
