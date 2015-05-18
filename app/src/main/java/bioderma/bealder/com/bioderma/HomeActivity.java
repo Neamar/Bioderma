@@ -59,13 +59,8 @@ public class HomeActivity extends Activity {
         openWebview("Where to go", "https://img.bealder.com/img/313701-plan_hotel.png", true);
     }
 
-    public void openTwitter(View view) {
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/search?q=%23bioderma"));
-        startActivity(myIntent);
-    }
-
     public void openInstagram(View view) {
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com"));
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/explore/tags/IAMAJACCIO2015/"));
         startActivity(myIntent);
     }
 
