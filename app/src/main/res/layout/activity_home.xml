@@ -70,21 +70,6 @@
             android:textColor="#000000"/>
 
         <Button
-            android:id="@+id/twitter"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:background="@drawable/border"
-            android:drawableLeft="@drawable/ic_twitter"
-            android:drawablePadding="5dp"
-            android:gravity="left|center"
-            android:padding="@dimen/button_padding"
-            android:text="Twitter"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:onClick="openTwitter"
-            android:textColor="#000000"/>
-
-        <Button
             android:id="@+id/instagram"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
